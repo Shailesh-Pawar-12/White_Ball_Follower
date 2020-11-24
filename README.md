@@ -1,6 +1,6 @@
 # ROS_Go_Chase_It
 
-This project consist of design the robot, house it inside the gazebo world, and program it to chase white-colored ball:
+This project consist of design the robot, house it inside the gazebo world, and program it to chase white-colored ball
 
 
 drive_bot:
