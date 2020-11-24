@@ -30,14 +30,14 @@ void process_image_callback(const sensor_msgs::Image img)
     int found_position = -1;
     int white_pixel_thresh = 200; // its giving good results with value > 200
 
-    for (int i = 0; i < img.height *img.step; i=i+3)   /// NOTE here i should start from zero and not include height. arrays are zero based and we add 3 at every iteration because we read 3 values at a time
+    for (int i = 0; i < img.height *img.step; i=i+3)   
     {
 	int red=img.data[i];
         int green=img.data[i+1];
         int blue=img.data[i+2];
 	if (red> white_pixel_thresh && green> white_pixel_thresh && blue> white_pixel_thresh) {
            found_position = i ;
-	   break; // this is a BIG performance boost since you do not have to scan the whole array
+	   break; 
         }
     }
     if (found_position != -1)
