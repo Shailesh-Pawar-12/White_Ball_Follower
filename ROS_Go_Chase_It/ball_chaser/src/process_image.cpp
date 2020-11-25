@@ -47,19 +47,19 @@ void process_image_callback(const sensor_msgs::Image img)
 
     	if (pixel_location >= img.width / 3  && pixel_location < 2*img.width /3 )
     	{
-		drive_robot(0.1,0);
+		drive_robot(0.1,0);                                                   // Move Forward
     	}
     	else if (pixel_location >= 2*img.width /3 && pixel_location < img.width)
     	{
-		drive_robot(0,-0.1);
+		drive_robot(0,-0.1);                                                  // Move Left
     	}
     	else if (pixel_location >= 0 && pixel_location < img.width / 3)
     	{
-		drive_robot(0,0.1);
+		drive_robot(0,0.1);                                                   // Move Right 
     	}
      }
      else{
-        	drive_robot(0,0);
+        	drive_robot(0,0);                                                     // Stop
 	}
 }
 
