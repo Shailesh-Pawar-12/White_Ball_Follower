@@ -1,5 +1,5 @@
 #include "ros/ros.h"
-#include "ball_chaser/DriveToTarget.h"
+#include "ball_chaser/DriveToTarget.h"      // Service                                   
 #include <sensor_msgs/Image.h>
 
 // Define a global client that can request services
@@ -36,7 +36,7 @@ void process_image_callback(const sensor_msgs::Image img)
         int green=img.data[i+1];
         int blue=img.data[i+2];
 	if (red> white_pixel_thresh && green> white_pixel_thresh && blue> white_pixel_thresh) {
-           found_position = i ;
+           found_position = i ;                                                                 // White ball found at position i
 	   break; 
         }
     }
