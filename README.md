@@ -38,7 +38,8 @@ $ source devel/setup.bash
 ```sh 
 $ roslaunch my_robot world.launch
 ```
-* Launch the ball chaser by running 
+* Open new terminal 
+* source it and launch the ball chaser by running 
 ```sh 
 $ roslaunch ball_chaser ball_chaser.launch 
 ``` 
