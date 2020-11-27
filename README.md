@@ -29,8 +29,17 @@ ball_chaser:
 To simulate this project:
 
 * Copy ROS_Go_Chase_It project folder in src folder fo catkin_workspace.
-* run ```sh $ catkin_make 
-            $ source devel/setup.bash```
-* Launch the world file by running ```sh $ roslaunch my_robot world.launch```
-* Launch the ball chaser by running ```sh $ roslaunch ball_chaser ball_chaser.launch ``` 
+* run 
+```sh 
+$ catkin_make 
+$ source devel/setup.bash
+```
+* Launch the world file by running 
+```sh 
+$ roslaunch my_robot world.launch
+```
+* Launch the ball chaser by running 
+```sh 
+$ roslaunch ball_chaser ball_chaser.launch 
+``` 
    
