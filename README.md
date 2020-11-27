@@ -29,7 +29,7 @@ ball_chaser:
 To simulate this project:
 
 * Copy ROS_Go_Chase_It project folder in src folder fo catkin_workspace.
-* run 
+* Run following command in catkin_workspace 
 ```sh 
 $ catkin_make 
 $ source devel/setup.bash
