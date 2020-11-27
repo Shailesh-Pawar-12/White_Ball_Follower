@@ -23,4 +23,14 @@ ball_chaser:
 * A process_image C++ node that reads robot’s camera image, analyzes it to determine the presence and position of a white ball. 
 
 * If a white ball exists in the image, node will request a service via a client to drive the robot towards it.
-        
+          
+  
+  
+To simulate this project:
+
+* Copy ROS_Go_Chase_It project folder in src folder fo catkin_workspace.
+* run '''sh $ catkin_make 
+            $ source devel/setup.bash"""
+* Launch the world file by running '''sh $ roslaunch my_robot world.launch'''
+* Launch the ball chaser by running '''sh $ roslaunch ball_chaser ball_chaser.launch ''' 
+   
