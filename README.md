@@ -1,4 +1,4 @@
-# ROS_Go_Chase_It
+# White_Ball_Follower
 
 This project consist of design the robot, house it inside the gazebo world, and program it to chase white-colored ball
 
@@ -28,7 +28,7 @@ ball_chaser:
   
 To simulate this project:
 
-* Copy ROS_Go_Chase_It project folder in src folder fo catkin_workspace.
+* Copy White_Ball_Follower project folder in src folder fo catkin_workspace.
 
 * Run following command in catkin_workspace 
 ```sh 
